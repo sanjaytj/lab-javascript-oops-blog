@@ -18,4 +18,12 @@ class Blog{
         document.getElementById('card-text').appendChild(description);
         description.innerHTML += this.detail;
     }
+    var addBlog = document.getElementById('addBlog');
+    var displayPost = addBlog.style.display;
+    if(displayPost == 'block'){
+        displayPost = 'none'; // to hide  
+    }
+    else{
+        displayPost = 'block'; //to display in block
+    }
 }
