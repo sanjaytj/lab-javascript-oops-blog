@@ -1,5 +1,7 @@
 ![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
 
+The published link is https://sanjaytj.github.io/lab-javascript-oops-blog/
+
 # ProGrad Lab | JS BLOG
 
 We have learned Object-oriented programming and how class and inheritance work in JavaScript. Now lets work with our Viking friends, applying all of the concepts we have just learned.
