@@ -1,6 +1,6 @@
 ![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
 
-The published link is https://sanjaytj.github.io/lab-javascript-oops-blog/
+The published link is https://sanjaytj.github.io/lab-javascript-oops-blog/  (To open in a new tab : CTRL+click (on Windows and Linux) or CMD+click (on MacOS) )
 
 # ProGrad Lab | JS BLOG
 
