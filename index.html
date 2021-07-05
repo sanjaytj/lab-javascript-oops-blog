@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="refresh" content="5; URL=https://sanjaytj.github.io/lab-javascript-oops-blog/displaycard.html" />
-      </head>
+        <meta http-equiv="refresh" content="20; URL=https://sanjaytj.github.io/lab-javascript-oops-blog/displaycard.html" />
+        <link rel="stylesheet" href="style.css">
+    </head>
       <body>
-        <p>If you are not redirected in five seconds, <a href="https://sanjaytj.github.io/lab-javascript-oops-blog/displaycard.html">click here</a>.</p>
+        <div id="clock">
+            <span id="seconds">20</span>
+            <p>If you are not redirected, Please <a href="https://sanjaytj.github.io/lab-javascript-oops-blog/displaycard.html">Click Here</a>  </p>
+        </div>        
+        
+        <script>
+            timeLeft = 20;
+
+function countdown() {
+	timeLeft--;
+	document.getElementById("seconds").innerHTML = String( timeLeft );
+	if (timeLeft > 0) {
+		setTimeout(countdown, 1000);
+	}
+};
+
+setTimeout(countdown, 1000);
+        </script>
+
       </body>
 </html>
 
