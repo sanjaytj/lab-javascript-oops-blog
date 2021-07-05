@@ -42,9 +42,7 @@ var addPost = document.getElementById('addBlog')
 addPost.addEventListener('click', function(){
     document.getElementById('popupContact').style.display = "block"
  })
-// function addBlog(){
-//     document.querySelector("#popupContact").style.visibility = "visible";
-// }
+
 
 let post = document.getElementById('post')
 post.addEventListener('click',function(){
@@ -53,18 +51,3 @@ post.addEventListener('click',function(){
     let detail = document.getElementById('detail').value
     let blog1 = new Blog(title, detail)
 })
-
-// function post(){
-//     let blog1 = new Blog(document.querySelector('#title').value, document.querySelector('#detail1').value)
-//     console.log(blog1);
-//     document.querySelector("#popupContact").style.visibility="hidden";
-//     let newImage = document.createElement("img");
-//     newImage.src = "assets/javascript.png";
-//     newImage.setAttribute("id", "blog-image")
-//     console.log(newImage)
-//     document.querySelector("#card-text").append(newImage)
-//     blog1.addTitle()
-//     blog1.addDescription()
-// }
-// document.querySelector("#addBlog").addEventListener("click",addBlog)
-// document.querySelector('#post').addEventListener("click",post)
