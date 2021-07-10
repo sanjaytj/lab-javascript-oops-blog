@@ -19,12 +19,11 @@ class Blog{
         title_card.innerHTML += this.title;
     }
     addDescription(){
-        console.log(detail);
-        var description = document.getElementById('p');
-        description.setAttribute("id","blog-description");
-        console.log(description);
-        document.getElementById('card-text').appendChild(description);
-        description.innerHTML += this.detail;
+        var description_card = document.createElement('p');
+        description_card.setAttribute("id","blog-description");
+        console.log(description_card);
+        document.getElementById('card-text').appendChild(description_card);
+        description_card.innerHTML += this.detail;
     }
 
 
@@ -38,11 +37,17 @@ class Blog{
     // }
 }
 
-var addPost = document.getElementById('addBlog')
-addPost.addEventListener('click', function(){
-    document.getElementById('popupContact').style.display = "block"
- })
+document.getElementById('addBlog').addEventListener('click', function(){
+    document.getElementById('popupContact').style.display = "block";
+})
 
+
+// document.getElementById('post').addEventListener('click', function(){
+//     document.getElementById('popupContact').style.display = "none";
+//     let title = document.getElementById('title').value;
+//     let detail = document.getElementById('detail').value;
+//     var blog1 = new Blog(title, detail)
+// })
 
 let post = document.getElementById('post')
 post.addEventListener('click',function(){
