@@ -49,10 +49,19 @@ document.getElementById('addBlog').addEventListener('click', function(){
 //     var blog1 = new Blog(title, detail)
 // })
 
+// when the new new blog is posted it should be displayed
 let post = document.getElementById('post')
 post.addEventListener('click',function(){
     document.getElementById('popupContact').style.display = 'none'
-    let title = document.getElementById('title').value
-    let detail = document.getElementById('detail').value
-    let blog1 = new Blog(title, detail)
+    var $img = document.createElement("img");
+    $img.setAttribute("src", "./assets/java-card-image.svg");
+    document.getElementById("card-text").appendChild($img);
+    let $title = document.getElementById('title').value;
+    let $detail = document.getElementById('detail').value;
+    let blog1 = new Blog($title, $detail)
+})
+
+// when clicked on close icon the pop up should close
+document.getElementById('close').addEventListener('click', function(){
+    document.getElementById('popupContact').style.display="none";
 })
